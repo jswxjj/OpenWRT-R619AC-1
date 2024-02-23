@@ -15,8 +15,7 @@
 
 # Add a feed source
 sed -i '$a src-git clone https://github.com/coolsnowwolf/lede' feeds.conf.default
-# git Aibx https://github.com/Aibx/openwrt-packages
-git clone https://github.com/kenzok8/openwrt-packages.git
+sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/kenzok8/small.git
 git clone https://github.com/destan19/OpenAppFilter.git
 git clone https://github.com/zzsj0928/luci-app-serverchand
